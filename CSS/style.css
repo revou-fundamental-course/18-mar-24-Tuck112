@@ -1,0 +1,298 @@
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+    scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Segoe UI", sans-serif;
+  color: #191919;
+  font-weight: 600;
+  padding: 8px 0;
+  transition: all;
+  transition-duration: 300ms;
+  border-bottom: 1px solid rgba(255, 68, 0, 0);
+}
+
+nav ul li a:hover {
+  color: orangered;
+  border-bottom: 1px solid orangered;
+}
+
+.menu-icon {
+  /* background-color: tomato; */
+  font-size: 28px;
+  display: none;
+}
+
+main {
+  padding-top: 7rem;
+}
+
+.padding {
+   text-align: center ; 
+   padding-top: 50px;
+}
+
+.grid-container {
+
+    display: flex; /* Mengaktifkan Flexbox di dalam container */
+    flex-wrap: wrap; /* Membungkus item ke baris baru jika tidak cukup ruang */
+    justify-content: space-around; /* Menyebar item dengan ruang yang sama */
+    align-items: center; /* Menengahkan secara vertikal */
+    flex-wrap: wrap;
+    margin-top: 50px;
+    /* background-color: #191919; */
+
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    /* background-color: DodgerBlue; */
+    width: 500px;
+  }
+  
+  .item{
+    flex: 2; /* Memberikan item ruang yang sama untuk fleksibilitas */
+    padding: 10px; /* Atur padding item */
+    margin: 5px; /* Atur margin item */
+    /* background-color: #666; */
+    width: 50%;
+  }
+
+  .item-info{
+
+    flex: 2; /* Memberikan item ruang yang sama untuk fleksibilitas */
+    /* background-color: #666; */
+    width: 100%;
+    margin-top: 150px;
+    text-align: left;
+  }
+
+  .img-item{
+    display: flex; /* Flexbox untuk menengahkan gambar dalam item */
+    justify-content: center;
+    align-items: center;
+ 
+  }
+
+  .card {
+    border-radius: 2px; /* Sudut membulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan */
+    background-color:#f0f4f4;
+    transition: box-shadow 0.3s ease; /* Transisi bayangan */
+    width: 300px; /* Atur lebar kartu */
+    padding: 20px; /* Atur padding di dalam kartu */
+    float: right;
+    margin-right: 70px;
+    position: sticky;
+    height: 500px;
+    margin-top: -300px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bayangan yang berbeda saat hover */
+}
+
+.card-content {
+    text-align: left; /* Menengahkan konten dalam kartu */
+}
+
+p {
+    color: #666; /* Warna isi */
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+b{
+    font-size: 20px;
+}
+
+input[type="text"], input[type="email"], textarea, select {
+    border-radius: 5px;
+   height: 40px;
+   width: 250px;
+ margin-bottom: 30px;
+   display: flex;
+  justify-content: center;
+  
+}
+
+label{
+ font-size: 14px;
+ font-weight: bold;
+ 
+
+ 
+}
+
+input[type="button"]{
+    text-align: center;
+    width: 250px;
+    height: 50px;
+    background-color: #191919;
+    color: #f0f4f4;
+    border-radius: 5px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.img{
+    width: 300px; 
+  /* margin-top: 10px; */
+
+}
+
+.profile{
+    width: 50px;
+    float: left;
+    border-radius: 100%;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.font-text{
+font-size: 20px;
+padding-right: 40px;
+color:#9fa9a9; 
+padding-top: -100px;
+}
+
+.profile-name{
+font-size: 16px;
+text-align: left;
+margin-top:-110px;
+
+}
+
+.profile-text{
+    text-align: left;
+
+}
+
+.text-h{
+   
+    text-align: left;
+ }
+
+ .number{
+width: 20px;
+float: left;
+
+ }
+
+ .list{
+    list-style: none;
+    margin-top: 20px;
+ }
+
+ .header{
+background-color: #666;
+text-align: center;
+height: 100px;
+margin-top: 40px;
+width: 1300px;
+ }
+
+ .container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    /* background-color: #2196F3; */
+    padding: 10px;
+    margin-top: 40px;
+    margin-left: 200px;
+  }
+  
+  .container > div {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    text-align: left;
+    padding: 20px 0;
+    font-size: 20px;
+  }
+
+  .text-a{
+    font-size: 70px;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .text-p{
+font-size: 20px;
+text-align: center;
+color: #9c9a9a;
+  }
+
+  .container-button {
+    display: flex;
+    justify-content: center; /* Mengatur tombol ke tengah secara horizontal */
+    align-items: center; /* Mengatur tombol ke tengah secara vertikal */
+    height: 200px; /* Tinggi container untuk contoh */
+  }
+
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li:last-of-type {
+    padding-bottom: 8px;
+  }
+
+  nav ul.hidden {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+    align-items: center;
+  }
+
+  /* .font-text {
+    float: left;
+    width: 480px;
+  }
+
+  .font-text1 {
+    float: left;
+    width: 480px;
+  } */
+}
